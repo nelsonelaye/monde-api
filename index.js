@@ -1,7 +1,8 @@
 require("./config/mysql");
 // require("./controller/user");
+require("dotenv").config();
 const express = require("express");
-const port = 2001;
+const port = process.env.PORT || 2001;
 
 const app = express();
 app.use(express.json());

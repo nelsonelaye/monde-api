@@ -3,6 +3,7 @@ const mysqlConnection = require("../config/mysql");
 const express = require("express");
 const router = express.Router();
 const authorize = require("../config/authorize");
+require("dotenv").config();
 
 router.get("/book", async (req, res) => {
   try {
