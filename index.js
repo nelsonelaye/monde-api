@@ -17,3 +17,5 @@ app.use("/api", require("./controller/category"));
 app.listen(port, () => {
   console.log("listening to port", port);
 });
+
+module.exports = app;
